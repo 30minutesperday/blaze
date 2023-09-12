@@ -1,0 +1,14 @@
+server:
+  port: 9000
+spring:
+  datasource:
+    url: jdbc:h2:file:~/posts
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+  h2:
+    console.enabled: true
